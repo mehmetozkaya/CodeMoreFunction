@@ -13,8 +13,12 @@ namespace CodeMoreFunction.Core
             this.Content.Add(money ?? throw new ArgumentNullException(nameof(money)));
         }
 
-
-
+        public Amount Charge(Currency currency, Amount toCharge)
+        {
+            //IEnumerable<Tuple<Amount, Money>> split = 
+            //    this.Content
+            //        .On(TimeSpan.Now)
+        }
 
     }
 }

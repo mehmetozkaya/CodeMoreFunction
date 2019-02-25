@@ -1,6 +1,7 @@
 ﻿namespace CodeMoreFunction.Core
 {
-    public class Money
+    public abstract class Money
     {
+        public abstract Money On(Timestamp time);
     }
 }
