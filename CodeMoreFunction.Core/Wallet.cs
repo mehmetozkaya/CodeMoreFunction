@@ -10,7 +10,7 @@ namespace CodeMoreFunction.Core
 
         public void Add(Money money)
         {
-            this.Content.Add(money ?? throw new ArgumentNullException(nameof(money)));
+            this.Content.Add(money ?? throw new ArgumentNullException(nameof(money)));            
         }
 
         public Amount Charge(Currency currency, Amount toCharge)
