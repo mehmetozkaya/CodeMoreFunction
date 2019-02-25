@@ -1,12 +1,14 @@
-﻿using System;
+﻿using CodeMoreFunction.Core;
+using System;
 
 namespace CodeMoreFunction.Console
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            System.Console.WriteLine("Hello World!");
+        {            
+            Wallet wallet = new Wallet();
+            wallet.Charge(Currency.USD, Amount.Zero(Currency.USD));
         }
     }
 }
